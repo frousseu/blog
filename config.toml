@@ -1,4 +1,4 @@
-baseurl = "https://frousseu.netlify.com/"
+baseurl = "https://frousseu.netlify.com"
 relativeurls = true
 languageCode = "en-us"
 title = "FR"
