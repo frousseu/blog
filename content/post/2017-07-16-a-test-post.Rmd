@@ -1,0 +1,45 @@
+---
+title: A test post
+author: frousseu
+date: '2017-07-16'
+slug: a-test-post
+categories: ["test"]
+tags: ["test"]
+weight: 1
+---
+
+Here is a simple example of plotting an interactive map with tmap, which is based of leaflet.
+
+```{r tmap, message=FALSE, warning=FALSE, out.width="100%"}
+
+library(tmap)
+library(sp)
+library(rgdal)
+library(rgeos)
+library(leaflet)
+
+tmap_mode("view")
+pol<-gBuffer(SpatialPoints(matrix(c(-75,45),ncol=2)),width=2)
+map<-tm_shape(pol)+tm_polygons()+tm_layout(basemaps=c("Esri.WorldImagery"))
+
+map
+
+```
+
+It is that simple! We could also try to implement a dygraph, which is another javascript graphing system which has been wrapped in an R package called dygraphs. 
+
+```{r dygraph, message=FALSE, warning=FALSE, out.width="100%"}
+
+library(dygraphs)
+library(xts)
+
+x<-runif(100)
+y<-runif(100)
+t<-as.Date(1:100)
+ts<-xts(cbind(x,y),t)
+dy<-dygraph(ts) %>% 
+	dyRangeSelector()
+dy
+
+```
+

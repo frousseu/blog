@@ -1,0 +1,51 @@
+baseurl = "/"
+relativeurls = true
+languageCode = "en-us"
+title = "FR"
+theme = "hugo-lithium-theme"
+googleAnalytics = ""
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+    
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Posts"
+    url = "/"
+    weight = 2
+[[menu.main]]
+    name = "Tutorials"
+    url = "/"
+    weight = 3
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/frousseu"
+
+
+[params]
+    description = "A blog mostly on data analysis, ecology, statistics and R programming."
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.11.0"
+    highlightjsCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdn.bootcss.com"
+    MathJaxVersion = "2.7.1"
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+

@@ -1,0 +1,25 @@
+---
+title: Hello world!
+author: frousseu
+date: '2017-07-16'
+slug: hello-world
+categories:
+  - test
+tags:
+  - test
+weight: 2
+---
+
+This is a test with the hello world thing. This is a test with the hello world thing. This is a test with the hello world thing. This is a test with the hello world thing. This is a test with the hello world thing. This is a test with the hello world thing. This is a test with the hello world thing. This is a test with the hello world thing. 
+
+```{r test}
+
+plot(1:10,1:10,pch=1:10,cex=5,col=1:10)
+
+```
+
+Just a bit more code to study the look of the output.
+
+```{r test2}
+rnorm(200)
+```
